@@ -17,10 +17,35 @@
 #' greeting_octopus(color_funs = list(crayon::yellow, crayon::magenta))
 #' greeting_octopus(color_funs = list(crayon::white))
 #'
-greeting_octopus <- function(include_angry = TRUE, color_funs = NULL) {
+greeting_logo <- function(include_angry = TRUE, color_funs = NULL) {
 
   # Initialize art, split by newlines ---------------------------------------
-  octopus_ascii <- "                        ___\n                     .-'   `'.\n                    /         \\\n                    |         ;\n                    |         |           ___.--,\n           _.._     |0) ~ (0) |    _.---'`__.-( (_.\n    __.--'`_.. '.__.\\    '--. \\_.-' ,.--'`     `\"\"`\n   ( ,.--'`   ',__ /./;   ;, '.__.'`    __\n   _`) )  .---.__.' / |   |\\   \\__..--\"\"  \"\"\"--.,_\n  `---' .'.''-._.-'`_./  /\\ '.  \\ _.-~~~````~~~-._`-.__.'\n        | |  .' _.-' |  |  \\  \\  '.               `~---`\n         \\ \\/ .'     \\  \\   '. '-._)\n          \\/ /        \\  \\    `=.__`~-.\n          / /\\         `) )    / / `\"\".`\\\n    , _.-'.'\\ \\        / /    ( (     / /\n     `--~`   ) )    .-'.'      '.'.  | (\n            (/`    ( (`          ) )  '-;\n             `      '-;         (-'"
+  octopus_ascii <- "                                                  
+                                                  
+                                                  
+                                                  
+                       +++++++                    
+                    +++%    ++                    
+                  ++#       ++                    
+                ++@        ++                     
+              +++         +@                      
+             ++@             +++++++++            
+            +++           +++@        #           
+            ++         +++                        
+           @++       +++         +                
+           +++      +++         +                 
+            ++      ++++      ++                  
+            +++       @++++++++                   
+              +++++    @+++++++++                 
+                #+++++++++     +++                
+                               ++++               
+                              ++++                
+                     ++    ++++++                 
+                       ++++++++                   
+                                                  
+                                                  
+                                                  
+                                                  "
   octopus_ascii <- strsplit(octopus_ascii, "\\n")[[1]]
 
 
